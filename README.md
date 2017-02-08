@@ -2,9 +2,9 @@
 微信开发,PHP接口接入,处理消息回复
 
 ### 使用
-1.绑定微信公众号后端的开发URL
-2.设置微信公众号后端的Token
-3.修改index.php里定义的WEIXINTOKEN为微信后台设置的Token
+1. 绑定微信公众号后端的开发URL
+2. 设置微信公众号后端的Token
+3. 修改index.php里定义的WEIXINTOKEN为微信后台设置的Token
 
 ``` php
 define('WEIXINTOKEN','Token');
@@ -27,16 +27,16 @@ $wx->on('text',function($obj,$that){
 $wx->run();
 ```
 ### 事件列表
--all *所有事件
--text
--image
--voice
--video
--shortvideo
--location
--link
--event
-[微信公众平台开发者文档](http://mp.weixin.qq.com/wiki/home/)
+- all *所有事件
+- text
+- image
+- voice
+- video
+- shortvideo
+- location
+- link
+- event
+
 
 ### 事件回调函数
 
@@ -46,3 +46,5 @@ function(event,callback($object,$object2){
      //$object2 当前对象
 });
 ```
+#### 参考资料
+[微信公众平台开发者文档](http://mp.weixin.qq.com/wiki/home/)
